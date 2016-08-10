@@ -10,7 +10,7 @@
 <body>
 
   <header class="page-header">
-    <div class="header-top">
+    <div class="">
       <div class="header-content">
         <div class="index-logo">
           <a>Техномарт</a>
@@ -100,10 +100,10 @@
     <section class="catalog">
       <div class="filter-caption">
         <p>Сортировка:</p>
-        <button type="button">По цене</button>
-        <button type="button">По типу</button>
-        <button type="button">По функционалу</button>
-        <span>Стрелка вверх</span><span>Стрелка вниз</span>
+        <a href="#">По цене</a>
+        <a href="#">По типу</a>
+        <a href="#">По функционалу</a>
+        <a href="#">Стрелка вверх</a><a href="#">Стрелка вниз</a>
       </div>
 
       <section class="production-catalog">
@@ -119,8 +119,13 @@
           <p class="old-price">30500 Р.</p>
           <a href="#" class="red-btn price-btn">25500 Р.</a>
         </article>
+        <!--  Пример блока с ховером-->
         <article class="product-card">
-          <img src="img/tool_item4.png" width="220" height="95" alt="tool-item4">
+          <div class="product-card-buttons">
+            <a href="#" class="btn buy-btn"><span>иконка корзины</span>Купить</a>
+            <a href="#" class="btn buy-btn">Закадки</a>
+          </div>
+          <img src="img/tool_item3.png" width="220" height="95" alt="tool-item3">
           <h4 class="tool-name">Перфоратор BOSCH BFG 2000</h4>
           <a href="#" class="red-btn price-btn">12500 Р.</a>
         </article>
@@ -208,7 +213,7 @@
         </div>
       </div>
       <div class="footer-feedback">
-        <section class="copyright">© 2010–2016 Компания «Техномарт» Все права защищены</section>
+        <section class="copyright"><p>© 2010–2016 Компания «Техномарт» Все права защищены</p></section>
         <section class="socials">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
