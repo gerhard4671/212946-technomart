@@ -109,8 +109,7 @@
 .icon-search::before { content: "🔍"; } /* "\1f50d" */
 .icon-bookmark::before { content: "🔖"; } /* "\1f516" */
 
-
-/*----------------------------Текстовый Блок------------------------------*/
+/*----------------------------Общие стили в рамках документа ------------------------------*/
 
 body {
     font-size: 17px;
@@ -119,6 +118,35 @@ body {
     font-weight: normal;
     font-family: "Cuprum", "Arial", sans-serif;
 }
+
+.container {
+    max-width:940px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+main {
+    width: 100%;
+    background-color: #fff;
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}
+
+section.servises-slider {
+    width: 100%;
+    background-color: #f2f6f8;
+}
+
+.page-footer {
+    width: 100%;
+    background-color: #32425c;
+}
+.footer-feedback {
+    background-color: #293449;
+}
+
+/*----------------------------Текстовый Блок------------------------------*/
 
 h3.tile-caption {
     font-size:24px;
@@ -131,7 +159,7 @@ h3.slider-header {
     line-height: 0.6666;
     text-transform: uppercase;
     color: #32425c;
-    /*font-weight: normal;*/
+    font-weight: normal;
 }
 
 h3.tool-name {
@@ -171,4 +199,57 @@ legend {
     font-size: 17px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+/*----------------------------header------------------------------*/
+
+header.page-header {
+    border:1px solid black;
+    width:100%;
+    background-color: #f1f5f7;
+}
+
+.header-top {
+    width:100%;
+    background-color: #293449;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-nav {
+    background-color: #32425c;
+    padding: 21px 50px;
+    border-bottom: 5px solid #293449;
+}
+
+ul {
+    list-style: none;
+    color: #fff;
+    padding: 0;
+    font-size: 0;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 17px;
+    margin-right: 60px;
+}
+
+ul li:last-child {
+    margin-right: 0;
 }
