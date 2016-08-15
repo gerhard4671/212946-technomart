@@ -417,3 +417,9 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+
+
+/*Обнуление отступов у абзацев и заголовков*/
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}

@@ -1,5 +1,4 @@
 /*=-----------------------блок подключения Шрифтов--------------------------------------*/
-
 @font-face {
   font-family: "Cuprum";
   font-style: normal;
@@ -110,11 +109,10 @@
 .icon-bookmark::before { content: "🔖"; } /* "\1f516" */
 
 /*----------------------------Общие стили в рамках документа ------------------------------*/
-
 body {
     font-size: 17px;
     background-color: green;
-    line-height: 1;
+    line-height: 17px;
     font-weight: normal;
     font-family: "Cuprum", "Arial", sans-serif;
 }
@@ -128,9 +126,6 @@ body {
 main {
     width: 100%;
     background-color: #fff;
-}
-h1, h2, h3, h4, h5, h6, p, ul {
-    margin: 0;
 }
 
 section.servises-slider {
@@ -146,17 +141,22 @@ section.servises-slider {
     background-color: #293449;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /*----------------------------Текстовый Блок------------------------------*/
 
 h3.tile-caption {
     font-size:24px;
-    line-height: 1.25;
+    line-height:36px;
     color: #fff;
 }
 
 h3.slider-header {
     font-size: 36px;
-    line-height: 0.6666;
+    line-height:24px;
     text-transform: uppercase;
     color: #32425c;
     font-weight: normal;
@@ -165,7 +165,7 @@ h3.slider-header {
 h3.tool-name {
     font-family: "PT Sans",  "Arial", sans-serif;
     font-size: 18px;
-    line-height: 1.11;
+    line-height: 20px;
 }
 
 h2 {
@@ -177,17 +177,17 @@ h2 {
 h2.slider-header {
     font-size: 36px;
     font-weight: bold;
-    line-height: 0.8333;
+    line-height: 30px;
     color: #fff;
 }
 
 h2.spliter-caption {
-    line-height: 1;
+    line-height: 30px;
     color: #32425c;
 }
 
 h2.content-header {
-    line-height: 0.8;
+    line-height: 24px;
 }
 
 fieldset {
@@ -200,7 +200,6 @@ legend {
     font-weight: bold;
     text-transform: uppercase;
 }
-
 /*----------------------------header------------------------------*/
 
 header.page-header {
@@ -214,22 +213,34 @@ header.page-header {
     background-color: #293449;
 }
 
+.index-logo {
+    background-color: #ee3643;
+    padding: 12px 55px;
+    margin-right: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+}
 
+.page-header span {
+    color: #6a7180;
+}
 
+span+a,
+.make-order {
+    text-decoration: none;
+    color:#fff;
+}
 
+.make-order {
+    display: block;
+    background-color: #63a63e;
+    float: right;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.index-logo, .search-form {
+    float: left;
+}
 
 .main-nav {
     background-color: #32425c;
