@@ -975,3 +975,99 @@ header.page-header {
   color: #ffd180;
   text-decoration: none;
 }
+
+
+/*-----------------------------------catalog page main------------------------------------*/
+    aside.filter-block {
+        float: left;
+        max-width: 220px;
+        margin-right: 20px;
+        background-color: pink;
+    }
+
+    section.catalog {
+        float: right;
+        max-width: 700px;
+        background-color: green;
+    }
+
+/*-------------------------------------catalog-header-----------------------------*/
+    .catalog-header {
+        margin-bottom: 20px;
+    }
+
+/*-------------------------------------bread-crumbs-----------------------------*/
+.bread-crumbs {
+    margin-bottom: 17px;
+}
+
+.bread-crumbs ul {
+    padding: 0;
+    font-size: 0;
+}
+
+.bread-crumbs li {
+    font-size: 13px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+
+}
+
+.bread-crumbs li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bread-crumbs li:first-child a {
+    font-size: 16px;
+    color: #dadde2;
+}
+
+.bread-crumbs span {
+    margin: 0px 16px;
+    color: #dadde2;
+}
+
+/*-------------------------------------catalog-spliter-----------------------------*/
+    .catalog-spliter {
+        padding: 30px 0 30px 30px;
+        background-color: #f2f6f8;
+        margin-bottom: 20px;
+    }
+/*-------------------------------------aside-form-----------------------------*/
+.filter-block p:first-child {
+    padding: 10px 0 10px 20px;
+    background-color: #f7f3ec;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+/*-------------------------------------catalog-----------------------------*/
+
+    .catalog-card {
+        width: 218px;
+        margin-right: 20px;
+    }
+
+    .catalog-card:nth-child(3n) {
+        margin-right: 0;
+    }
+
+/*-------------------------------------about-perforators-----------------------------*/
+.about-perforators{
+    background-color: #f2f6f8;
+    padding-top: 68px;
+    padding-bottom: 72px;
+}
+
+.about-perforators h2 {
+    margin-bottom: 32px;
+}
+
+.about-perforators p {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
