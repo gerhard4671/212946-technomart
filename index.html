@@ -176,13 +176,10 @@
   </div>
   <section class="servises">
     <div class="container">
-
       <h2 class="content-header">Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-
-      <div class="servises-slider">
-
-        <div class="delivery slide">
+      <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил,
+          чтобы сделать ваши покупки приятными.</p>
+      <div class="servises-slider clearfix">
           <div class="servises-list">
             <ul>
                 <li><a href="#">Доставка</a></li>
@@ -190,35 +187,27 @@
                 <li><a href="#">Кредит</a></li>
             </ul>
           </div>
+        <div class="delivery slide">
           <div class="slider-content">
             <h3 class="slider-header">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
           </div>
         </div>
         <div class="warranty slide">
-          <div class="servises-list">
-            <ul>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Кредит</a></li>
-            </ul>
-          </div>
           <div class="slider-content">
             <h3 class="slider-header">Гарантия</h3>
-            <p>Какой-то текст про гарантию</p>
+            <p>Если купленный у нас товар поломается или заискрит,а также в случае пожара, спровоцированного его
+            возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+            Дом уж восстановите как-нибудь сами.</p>
           </div>
         </div>
         <div class="credit slide">
-          <div class="servises-list">
-            <ul>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Кредит</a></li>
-            </ul>
-          </div>
           <div class="slider-content">
             <h3 class="slider-header">Кредит</h3>
-            <p>Какой-то текст про кредит</p>
+            <p>Залезть в долговую яму стало проще!Кредитные
+                консультанты придут вам на помощь.</p>
+            <a href="#" class="btn red-btn">Отправить заявку</a>
           </div>
         </div>
       </div>
@@ -231,7 +220,7 @@
       <h2 class="content-header">КОМПАНИЯ «Техномарт»</h2>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
       <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
-      <ul>
+      <ul class="delivery-variant">
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
@@ -241,7 +230,7 @@
     <div class="contacts">
       <h2 class="content-header">КОНТАКТЫ</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-      <img src="img/map.jpg" alt="map" width="300" height="158">
+      <img id="mini-map" src="img/map.jpg" alt="map" width="300" height="158">
       <a href="#" class="btn red-btn">Заблудились? Напишите нам!</a>
     </div>
   </section>
@@ -301,5 +290,10 @@
 </div>
 </footer>
 
+<div class="modal-map container" id="modal-map">
+    <button id="close-map-btn"class="modal-map-close" type="button" title="Закрыть">Закрыть</button>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
