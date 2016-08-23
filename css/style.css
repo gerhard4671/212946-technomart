@@ -362,7 +362,7 @@ header.page-header {
 }
 .main-nav {
   background-color: #32425c;
-  padding: 21px 50px;
+  /*padding: 0 50px;*/
   border-bottom: 5px solid #293449;
   margin-top: 45px;
 }
@@ -371,11 +371,13 @@ header.page-header {
   color: #fff;
   padding: 0;
   font-size: 0;
+  margin:0 26px;
 }
 .main-nav a {
   text-decoration: none;
   color: #fff;
   display: block;
+  padding: 21px 30px;
 }
 .search-form {
   margin-right: 19px;
@@ -407,35 +409,43 @@ header.page-header {
 
 /*поправить вложенность в будущем*/
 
-.main-nav ul li {
+.main-nav  li {
   display: inline-block;
   font-size: 17px;
-  margin-right: 60px;
 }
-.main-nav ul li:last-child {
-  margin-right: 0;
+
+.main-nav a:hover {
+    background-color: #293449;
 }
+
+.main-nav a:active {
+    background-color: #1d2739;
+    opacity: 0.5;
+}
+
+
 .header-info {
   padding: 0;
   font-size: 0;
 }
-.header-info li {
+.header-info .header-about,
+.header-info .header-adress,
+.header-info .login-block {
   display: inline-block;
   vertical-align: top;
   font-size: 17px;
 }
-.header-info li .header-about {
+.header-info .header-about {
   max-width: 200px;
   margin-left: 50px;
+   margin-right: 50px;
   font-style: italic;
   color: #ee3643;
   line-height: 23px;
   font-size: 16px;
 }
-.header-info li:first-of-type {
-  margin-right: 50px;
-}
-.header-info li:nth-of-type(2) {
+
+.header-info .header-adress {
   margin-right: 76px;
 }
 .header-adress {
@@ -462,19 +472,36 @@ header.page-header {
   color: #000;
   font-size: 21px;
 }
-.login-block a:first-of-type {
+.login-block .login-btn{
   margin-right: 10px;
   padding: 14px 25px 14px 14px;
 }
 .login-block .icon-login {
   margin-right: 3px;
 }
-.login-block a:last-of-type {
+.login-block .registr-btn {
   padding: 16px 24px;
 }
 .login-block {
   max-width: 300px;
 }
+
+.login-btn:hover, .registr-btn:hover {
+    color: #ee3643;
+}
+
+.login-btn:hover span {
+    color: #32425c;
+}
+
+.login-btn:active, .registr-btn:active {
+    color:rgba(0, 0, 0, 0.3);
+}
+
+.login-btn:hover span {
+    color: inherit;
+}
+
 
 /*----------------------------Main tiles------------------------------*/
 
@@ -553,6 +580,14 @@ header.page-header {
   text-align: center;
 }
 
+
+.tile-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tile-btn:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 /*----------------------------Main tiles slider------------------------------*/
 
 .second-slide {
@@ -603,6 +638,12 @@ header.page-header {
   display: table;
   clear: both;
 }
+.index-spliter .red-btn:hover {
+  background-color: #ca2c37;
+}
+.index-spliter .red-btn:active {
+  background-color: #ba2732;
+}
 
 /*---------------------------------product-card ---------------------------------*/
 
@@ -644,7 +685,51 @@ header.page-header {
 }
 .product-card-buttons {
   display: none;
+  margin-top: 44px;
+  margin-bottom: 46px;
 }
+.product-card-buttons .buy-btn {
+  background-color: #63a63e;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: 135px;
+  text-align: right;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 43px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  box-shadow: 0 3px 0 0 #367315;
+}
+.buy-btn span {
+  margin-right: 20px;
+  font-size: 17px;
+  opacity: 0.3;
+}
+
+.bookmark-btn {
+    width: 135px;
+    box-sizing: border-box;
+    display: block;
+    border: 3px solid #63a63e;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 auto;
+    color: #32425c;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+     text-transform: uppercase;
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+
 .product-card .price-btn {
   width: 120px;
   box-sizing: border-box;
@@ -659,6 +744,7 @@ header.page-header {
   border-bottom-left-radius: 4px;
   margin-top: 8px;
 }
+
 .price-btn::after {
   content: "";
   position: absolute;
@@ -682,6 +768,40 @@ header.page-header {
   margin-top: 10px;
 }
 
+
+.product-card:hover {
+box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+.product-card:hover img{
+    display: none;
+}
+
+.product-card:hover .product-card-buttons{
+    display: block;
+}
+
+.product-card-buttons .buy-btn:hover {
+    background-color: #5fbb2d;
+}
+
+.product-card-buttons .buy-btn:hover span {
+    opacity:1;
+}
+
+.product-card-buttons .buy-btn:active {
+    background-color: #518534;
+      box-shadow: 0 3px 0 0 #518534;
+ }
+
+.bookmark-btn:hover{
+    border-color: #32425c;
+}
+
+.bookmark-btn:active{
+    border-color: #c1c6ce;
+    color: #c1c6ce;
+}
+
 /*---------------------------------brands ---------------------------------*/
 
 .popular-brands {
@@ -697,6 +817,7 @@ header.page-header {
   margin-right: 20px;
   margin-bottom: 20px;
   vertical-align: top;
+  cursor: pointer;
 }
 .brand-item img {
   display: block;
@@ -705,6 +826,15 @@ header.page-header {
 }
 .brand-item:nth-child(4), .brand-item:nth-child(8) {
   margin-right: 0;
+}
+.brand-item:hover {
+  box-shadow: 0 0 25px 0 rgba(41, 52, 73, 0.5);
+}
+.brand-item:active {
+  box-shadow: 0px 0px 10px 0px rgba(41, 52, 73, 0.5);
+}
+.brand-item:active img {
+  opacity: 0.3;
 }
 
 /*--------------------bottom slider--------------*/
@@ -715,7 +845,6 @@ header.page-header {
 .servises {
   padding-top: 65px;
 }
-
 .servises .content-header {
   width: 480px;
   margin-bottom: 34px;
@@ -726,30 +855,24 @@ header.page-header {
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
 }
-
 .servises .content-header+p {
   box-sizing: border-box;
   width: 480px;
   padding-right: 80px;
   margin-bottom: 67px;
 }
-
 .servises-slider .slide {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
-
 .servises-slider .delivery {
-      background: url("../img/slide_delivery.png") right bottom no-repeat;
+  background: url("../img/slide_delivery.png") right bottom no-repeat;
 }
-
 .servises-slider .warranty {
-      background: url("../img/slide_warranty.png") right bottom no-repeat;
+  background: url("../img/slide_warranty.png") right bottom no-repeat;
 }
-
 .servises-slider .credit {
-      background: url("../img/slide_credit.png") right bottom no-repeat;
+  background: url("../img/slide_credit.png") right bottom no-repeat;
 }
-
 .servises-list {
   float: left;
   width: 240px;
@@ -759,12 +882,20 @@ header.page-header {
   float: right;
   width: 620px;
 }
-
 .servises-list ul {
+  position: relative;
   list-style: none;
   padding: 0;
   width: 100%;
-
+}
+.servises-list ul::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 279px;
+  background: url("../img/slider_shadow.png") no-repeat;
+  right: -2px;
+  top: -30px;
 }
 .servises-list a {
   display: block;
@@ -777,28 +908,40 @@ header.page-header {
   text-transform: capitalize;
   background-color: #32425c;
 }
-
+.servises-list a:hover {
+  background-color: #293449;
+}
+.servises-list a.active-slide {
+  background-color: #fff;
+  color: #32425c;
+  border-top: none;
+  border-bottom: none;
+}
 .servises .slider-header {
   margin-bottom: 27px;
   max-width: 275px;
 }
-.servises  .slider-header+p {
+.servises .slider-header+p {
   max-width: 277px;
 }
-
 .credit .slider-header+p {
-    margin-bottom: 26px;
+  margin-bottom: 26px;
 }
-
 .credit .red-btn {
-    max-width: 195px;
-    padding: 10px 42px;
-    box-sizing: border-box;
-    line-height: 18px;
+  max-width: 195px;
+  padding: 10px 42px;
+  box-sizing: border-box;
+  line-height: 18px;
 }
-
+.credit .red-btn:hover {
+  background-color: #ca2c37;
+}
+.credit .red-btn:active {
+  background-color: #ba2732;
+}
 
 /*================================================About and contacts=========================================================*/
+
 
 /*General styles*/
 
@@ -872,17 +1015,17 @@ header.page-header {
 
 /*======================================About and contacts interactive style================================================================*/
 
+
 /*buttons action*/
+
 .about-and-contacts .red-btn:hover {
-    background-color: #ca2c37;
+  background-color: #ca2c37;
 }
 .about-and-contacts .red-btn:active {
-    background-color: #ba2732;
+  background-color: #ba2732;
 }
 
 /*======================================About and contacts interactive style================================================================*/
-
-
 
 
 /*=============================================== page-footer =============================================================================*/
@@ -1005,11 +1148,14 @@ header.page-header {
 }
 
 /*=================================== footer action style ===========================*/
+
+
 /* socials interactive */
 
 .socials a:hover, .socials a:active {
   background-color: #ee3643;
 }
+
 /* feedback, developers  interactive */
 
 .feedback a:hover, .developers a:hover {
@@ -1031,21 +1177,24 @@ header.page-header {
 }
 
 /*=================================== map pop up===========================*/
+
 .modal-map {
-    position: fixed;
-    display: none;
-    width: 940px;
-    height: 447px;
-    box-shadow: 0 0 16px 1px rgba(35, 31, 32, 0.5);
-    top: 50%;
-    left: 50%;
-    background: url(../img/map_big.jpg) no-repeat;
-    margin-top: -223px;
-    margin-left: -470px;
+  position: fixed;
+  display: none;
+  width: 940px;
+  height: 447px;
+  box-shadow: 0 0 16px 1px rgba(35, 31, 32, 0.5);
+  top: 50%;
+  left: 50%;
+  background: url(../img/map_big.jpg) no-repeat;
+  margin-top: -223px;
+  margin-left: -470px;
 }
+
 /*.modal-map img {
 
 }*/
+
 .modal-map-close {
   position: absolute;
   width: 25px;
@@ -1072,7 +1221,6 @@ header.page-header {
 .modal-map-close::after {
   transform: rotate(-45deg);
 }
-
 
 /*-----------------------------------catalog page main------------------------------------*/
 

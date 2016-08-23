@@ -29,26 +29,18 @@
         <a href="#" class="btn make-order">Оформить заказ</a>
       </div>
     </div>
-    <div class="container">
-        <ul class="header-info">
-            <li>
+    <div class="container header-info">
                 <section class="header-about">
                   <p>Интернет-магазин строительных материалови инструментов для ремонта</p>
                 </section>
-            </li>
-            <li>
                 <section class="header-adress">
                   <p><span class="icon-phone"></span>+7 (812) 555-05-55</p>
                   <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </section>
-            </li>
-            <li>
                 <section class="login-block">
-                  <a href="#"><span class="icon-login"></span>Войти</a>
-                  <a href="#">Регистрация</a>
+                  <a href="#" class="login-btn"><span class="icon-login"></span>Войти</a>
+                  <a href="#" class="registr-btn">Регистрация</a>
                 </section>
-            </li>
-        </ul>
      <nav class="main-nav">
         <ul>
           <li><a href="#">Главная</a></li>
@@ -116,18 +108,30 @@
     </section>
     <section class="production-catalog">
       <article class="product-card">
+          <div class="product-card-buttons">
+            <a href="#" class="btn buy-btn"><span class="icon-basket"></span>Купить</a>
+            <a href="#" class="btn bookmark-btn">В Закладки</a>
+          </div>
         <img src="img/drill1.jpg" width="185" height="165" alt="tool-item1">
         <h3 class="tool-name">Перфоратор BOSCH BFG 9000</h3>
         <p class="old-price">32500 Р.</p>
         <div class="red-btn price-btn">25500 Р.</div>
       </article>
       <article class="product-card">
+          <div class="product-card-buttons">
+            <a href="#" class="btn buy-btn"><span class="icon-basket"></span>Купить</a>
+            <a href="#" class="btn bookmark-btn">В Закладки</a>
+          </div>
         <img src="img/drill2.jpg" width="185" height="165" alt="tool-item2">
         <h3 class="tool-name">Перфоратор BOSCH BFG 3000</h3>
         <p class="old-price">22500 Р.</p>
         <div class="red-btn price-btn">15500 Р.</div>
       </article>
       <article class="product-card">
+          <div class="product-card-buttons">
+            <a href="#" class="btn buy-btn"><span class="icon-basket"></span>Купить</a>
+            <a href="#" class="btn bookmark-btn">В Закладки</a>
+          </div>
         <img src="img/drill3.jpg" width="185" height="165" alt="tool-item3">
         <h3 class="tool-name">Перфоратор BOSCH BFG 6000</h3>
         <p class="old-price">30500 Р.</p>
@@ -135,8 +139,8 @@
       </article>
       <article class="product-card">
         <div class="product-card-buttons">
-          <a href="#" class="btn buy-btn"><span>иконка корзины</span>Купить</a>
-          <a href="#" class="btn buy-btn">Закадки</a>
+          <a href="#" class="btn buy-btn"><span class="icon-basket"></span>Купить</a>
+          <a href="#" class="btn bookmark-btn">В Закладки</a>
         </div>
         <img src="img/drill2.jpg" width="185" height="165" alt="tool-item3">
         <h3 class="tool-name">Перфоратор BOSCH BFG 6000</h3>
@@ -181,8 +185,8 @@
           чтобы сделать ваши покупки приятными.</p>
       <div class="servises-slider clearfix">
           <div class="servises-list">
-            <ul>
-                <li><a href="#">Доставка</a></li>
+            <ul id="slider-toogle">
+                <li><a href="#" class="active-slide">Доставка</a></li>
                 <li><a href="#">Гарантия</a></li>
                 <li><a href="#">Кредит</a></li>
             </ul>

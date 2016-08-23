@@ -11,4 +11,5 @@ window.onload = function () {
     closeBtn.onclick = function () {
         modalMap.style.display="none";
     };
+
 };
