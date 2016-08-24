@@ -19,8 +19,7 @@
           <a>Техномарт</a>
         </div>
         <form action="*" method="get" class="search-form">
-          <label><span class="icon-search"></span><span>Поиск</span>
-            <input type="search" name="sitesearch">
+            <input type="search" name="sitesearch" placeholder="Поиск:">
           </label>
         </form>
 
@@ -235,7 +234,7 @@
       <h2 class="content-header">КОНТАКТЫ</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
       <img id="mini-map" src="img/map.jpg" alt="map" width="300" height="158">
-      <a href="#" class="btn red-btn">Заблудились? Напишите нам!</a>
+      <a href="#" id="contact-form" class="btn red-btn">Заблудились? Напишите нам!</a>
     </div>
   </section>
 </div>
@@ -296,6 +295,28 @@
 
 <div class="modal-map container" id="modal-map">
     <button id="close-map-btn"class="modal-map-close" type="button" title="Закрыть">Закрыть</button>
+</div>
+<div class="wright-us" id="modal-form">
+    <button id="close-form-btn"class="modal-form-close" type="button" title="Закрыть">Закрыть</button>
+    <form action="*" method="get" class="contact-form">
+        <fieldset class="contact-part">
+            <div class="user-name">
+                <label for="">Ваше имя:</label>
+                <input type="text" name="userName" value="" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div class="email">
+                <label for="">Ваш e-mail:</label>
+                <input type="email" name="userEmail" value="" placeholder="Для отправки ответа">
+            </div>
+            <div class="comment">
+                <label for="">Текст письма:</label>
+                <textarea name="comment" value="" placeholder="В свободной форме"></textarea>
+            </div>
+        </fieldset>
+        <fieldset class="submit-part">
+            <button type="submit" name="button">Отправить</button>
+        </fieldset>
+    </form>
 </div>
 
 <script src="js/main.js"></script>
