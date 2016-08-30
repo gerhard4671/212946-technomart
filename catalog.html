@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="page-header">
+    <header class="page-header catalog-header">
       <div class="header-top">
         <div class="container clearfix">
           <div class="index-logo">
@@ -72,30 +72,32 @@
       <form action="" method="post" class="filter-form" oninput="result.value=price.value">
           <fieldset class="range">
               <legend>Цена:</legend>
-              <input type="range" id="price" class="range" min="0" max="30000" name="rangebar">
-              <output name="result" id="result"></output>
+                <div class="range-filter">
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="toogle toogle-min"></div>
+                    <div class="toogle toogle-max"></div>
+                </div>
+                <div class="price-control">
+                    <input  class="min-price"name="min-price" type="text" value="0"><span>-</span>
+        <input class="max-price" name="max-price" type="text" value="30000">
+                </div>
           </fieldset>
         <fieldset class="brands">
             <legend>ПРОИЗВОДИТЕЛИ:</legend>
-              <input type="checkbox" id="bosch" checked value="Bosch" name="brand1">
-              <label for="bosch">Bosch</label>
-              <input type="checkbox" id="interskol" value="interskol" name="brand2">
-              <label for="interskol">ИНТЕРСКОЛ</label>
-              <input type="checkbox" id="makita" checked value="makita" name="brand3">
-              <label for="makita">MAKIta</label>
-              <input type="checkbox" id="dewalt" value="Dewalt" name="brand4">
-              <label for="dewalt">Dewalt</label>
-              <input type="checkbox" id="hitachi" value="Hitachi" name="brand5">
-              <label for="hitachi">Hitachi</label>
+              <label for="bosch"><input type="checkbox" id="bosch" checked value="Bosch" name="brand1"><span></span>Bosch</label>
+              <label for="interskol"><input type="checkbox" id="interskol" value="interskol" name="brand2"><span></span>ИНТЕРСКОЛ</label>
+              <label for="makita"> <input type="checkbox" id="makita" checked value="makita" name="brand3"><span></span>MAKIta</label>
+              <label for="dewalt"><input type="checkbox" id="dewalt" value="Dewalt" name="brand4"><span></span>Dewalt</label>
+              <label for="hitachi"> <input type="checkbox" id="hitachi" value="Hitachi" name="brand5"><span></span>Hitachi</label>
         </fieldset>
         <fieldset class="power-type">
             <legend>ПИТАНИЕ:</legend>
-              <input type="radio" checked id="battary" value="battary" name="power-type">
-              <label for="battary">Аккумуляорные</label>
-              <input type="radio" id="circuit" value="circuit" name="power-type">
-              <label for="circuit">Сетевые</label>
+              <label for="battary"><input type="radio" checked id="battary" value="battary" name="power-type" ><span></span>Аккумуляорные</label>
+              <label for="circuit"><input type="radio" id="circuit" value="circuit" name="power-type"><span></span>Сетевые</label>
         </fieldset>
-        <button type="button" name="filter-button" class="btn">Показать</button>
+        <button type="submit" name="filter-button" class="btn">Показать</button>
       </form>
     </aside>
 

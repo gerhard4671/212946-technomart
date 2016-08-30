@@ -71,22 +71,32 @@
         </div>
       </div>
       <div class="features-container">
-        <div class="perforator-slider">
-          <div class="slide main-slide">
-            <div class="title-block">
-              <h2 class="slider-header">Перфораторы</h2>
-              <p class="slider-caption">Настроящие мужские игрушки</p>
+          <div class="perforator-slider">
+              <input type="radio" name="perf-toggle" id="btn-1" checked>
+              <input type="radio" name="perf-toggle" id="btn-2">
+            <div class="perforator-slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
             </div>
-            <a href="#" class="btn red-btn">Открыть каталог</a>
-          </div>
-          <div class="slide second-slide">
-            <div class="title-block">
-              <h2 class="slider-header">Дрели</h2>
-              <p class="slider-caption">Соседям на радость!</p>
+            <div class="perforator-slider-slides">
+
+              <div class="slide main-slide">
+                  <div class="title-block">
+                    <h2 class="slider-header">Перфораторы</h2>
+                    <p class="slider-caption">Настроящие мужские игрушки</p>
+                  </div>
+                  <a href="#" class="btn red-btn">Открыть каталог</a>
+              </div>
+              <div class="slide second-slide">
+                <div class="title-block">
+                  <h2 class="slider-header">Дрели</h2>
+                  <p class="slider-caption">Соседям на радость!</p>
+                </div>
+                <a href="#" class="btn red-btn">Открыть каталог</a>
+              </div>
             </div>
-            <a href="#" class="btn red-btn">Подробнее о компании</a>
+
           </div>
-        </div>
 
         <div class="features-box">
             <div class="tile discount-tile">
@@ -177,41 +187,47 @@
       </div>
     </section>
   </div>
+
   <section class="servises">
     <div class="container">
       <h2 class="content-header">Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил,
-          чтобы сделать ваши покупки приятными.</p>
-      <div class="servises-slider clearfix">
-          <div class="servises-list">
-            <ul id="slider-toogle">
-                <li><a href="#" class="active-slide">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Кредит</a></li>
-            </ul>
-          </div>
-        <div class="delivery slide">
-          <div class="slider-content">
-            <h3 class="slider-header">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
-          </div>
+      <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+
+      <div class="servises-list">
+        <input type="radio" name="bottom-slider" id="servises-slide1" checked>
+        <input type="radio" name="bottom-slider" id="servises-slide2">
+        <input type="radio" name="bottom-slider" id="servises-slide3">
+        <div class="servises-list-control">
+          <ul class="slider-toogle">
+            <li><label for="servises-slide1">Доставка</label></li>
+            <li><label for="servises-slide2">Гарантия</label></li>
+            <li><label for="servises-slide3">Кредит</label></li>
+          </ul>
         </div>
-        <div class="warranty slide">
-          <div class="slider-content">
-            <h3 class="slider-header">Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит,а также в случае пожара, спровоцированного его
-            возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-            Дом уж восстановите как-нибудь сами.</p>
-          </div>
-        </div>
-        <div class="credit slide">
-          <div class="slider-content">
-            <h3 class="slider-header">Кредит</h3>
-            <p>Залезть в долговую яму стало проще!Кредитные
-                консультанты придут вам на помощь.</p>
-            <a href="#" class="btn red-btn">Отправить заявку</a>
-          </div>
+        <div class="servises-slider">
+            <div class="delivery slide">
+              <div class="slider-content">
+                <h3 class="slider-header">Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
+                    Ведь мы неплохо заработаем,<br> поднимая его на ваш на этаж!</p>
+              </div>
+            </div>
+            <div class="warranty slide">
+              <div class="slider-content">
+                <h3 class="slider-header">Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит, <br>а также в случае пожара, спровоцированного его
+                возгаранием,<br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый. <br>
+                Дом уж восстановите как-нибудь сами.</p>
+              </div>
+            </div>
+            <div class="credit slide">
+              <div class="slider-content">
+                <h3 class="slider-header">Кредит</h3>
+                <p>Залезть в долговую яму стало проще! <br>Кредитные
+                    консультанты придут вам на помощь.</p>
+                <a href="#" class="btn red-btn">Отправить заявку</a>
+              </div>
+            </div>
         </div>
       </div>
     </div>
