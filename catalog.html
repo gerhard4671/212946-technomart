@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт - каталог</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body>
@@ -17,7 +17,6 @@
         </div>
         <form action="*" method="get" class="search-form">
           <input type="search" name="sitesearch" placeholder="Поиск:">
-          </label>
         </form>
 
         <a href="#" class="header-bookmark"><span class="icon-bookmark"></span>Закладки:0</a>
@@ -35,9 +34,11 @@
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </section>
         <section class="user-login">
-          <a href="#" class="login-btn"><span class="icon-user"></span>Равшан Джумшутович<span class="icon-logout"></a>
+          <a href="#" class="login-btn"><span class="icon-user"></span>Равшан Джумшутович<span class="icon-logout"></span></a>
           <div class="login-links">
-            <a href="#">Мои заказы</a><span></span><a href="#">Личный кабинет</a>
+            <a href="#">Мои заказы</a>
+            <span></span>
+            <a href="#">Личный кабинет</a>
           </div>
         </section>
     </div>
@@ -74,7 +75,7 @@
     <div class="container clearfix">
       <aside class="filter-block">
         <p>Фильтр:</p>
-        <form action="" method="post" class="filter-form" oninput="result.value=price.value">
+        <form action="*" method="post" class="filter-form" oninput="result.value=price.value">
           <fieldset class="range">
             <legend>Цена:</legend>
             <div class="range-filter">
@@ -286,7 +287,6 @@
         </section>
       </div>
     </div>
-    </div>
   </footer>
 
   <div class="confirm-block">
@@ -294,8 +294,10 @@
     <p class="confirm-message">Товар добавлен в корзину!</p>
     <div class="button-block">
       <a href="#">ОФОРМИТЬ ЗАКАЗ</a>
-      <a href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+      <a href="#" class="continue">ПРОДОЛЖИТЬ ПОКУПКИ</a>
     </div>
   </div>
+
+  <script src="js/catalog-min.js"></script>
 
 </body>

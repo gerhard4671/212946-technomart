@@ -1,26 +1,33 @@
-window.onload = function () {
+window.onload = function() {
 
-    var miniMap = document.getElementById("mini-map");
-    var modalMap = document.getElementById("modal-map");
-    var closeBtn = document.getElementById("close-map-btn");
-    var contactForm = document.getElementById("contact-form");
-    var closeForm = document.getElementById("close-form-btn");
-    var modalForm = document.getElementById("modal-form");
+  var mapOpn = document.querySelector('#mini-map');
+  var modalMap = document.querySelector('.modal-map');
+  var closeMap = document.querySelector(".modal-map-close");
+
+  var formOpn = document.querySelector("#contact-form");
+  var modalForm = document.querySelector(".wright-us");
+  var closeForm = document.querySelector(".modal-form-close");
 
 
-    miniMap.onclick = function () {
-        modalMap.style.display="block";
-    };
+  mapOpn.addEventListener("click", function(event) {
+    event.preventDefault();
+    modalMap.classList.add("modal-map-show");
+  });
 
-    closeBtn.onclick = function () {
-        modalMap.style.display="none";
-    };
+  closeMap.addEventListener("click", function(event) {
+    event.preventDefault();
+    modalMap.classList.remove("modal-map-show");
+  });
 
-    contactForm.onclick = function () {
-        modalForm.style.display="block";
-    };
-    closeForm.onclick = function () {
-        modalForm.style.display="none";
-    };
+  formOpn.addEventListener("click", function(event) {
+    event.preventDefault();
+    modalForm.classList.add("wright-us-show");
+  });
+
+  closeForm.addEventListener("click", function(event) {
+    event.preventDefault();
+    modalForm.classList.remove("wright-us-show");
+  });
+
 
 };
