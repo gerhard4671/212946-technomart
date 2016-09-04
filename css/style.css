@@ -2,48 +2,42 @@
 
 @font-face {
   font-family: "Cuprum";
-  font-weight: 400;
   src: local("Cuprum-Regular"), url("../fonts/cuprum.woff2") format("woff2"), url("../fonts/cuprum.woff") format("woff");
 }
 
 @font-face {
   font-family: "Cuprum-Bold";
-  font-weight: 700;
   src: local("Cuprum-Bold"), url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Cuprum-BoldItalic";
-  font-weight: 700;
   src: local("Cuprum-BoldItalic"), url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff") format("woff");
 }
 
 @font-face {
   font-family: "Cuprum-Italic";
-  font-weight: 400;
   src: local("Cuprum-Italic"), url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
 }
 
 @font-face {
   font-family: "PT Sans";
-  font-weight: 400;
   src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
   font-family: "PT Sans-bold";
-  font-weight: 700;
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
 
 @font-face {
-  font-weight: normal;
   font-family: "symbols-technomart";
   src: url("../fonts/symbols-technomart.woff") format("woff"), url("../fonts/symbols-technomart.woff2") format("woff2");
 }
 
 [class^="icon-"]::before, [class*=" icon-"]::before {
   display: inline-block;
+  vertical-align: middle;
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
@@ -208,8 +202,10 @@ section.servises {
   color: white;
   text-decoration: none;
   background-color: #ee3643;
-  padding: 13px 55px;
+  /*padding: 13px 55px;*/
   text-align: center;
+  line-height: 38px;
+  vertical-align: middle;
   border-radius: 4px;
 }
 
@@ -220,7 +216,7 @@ h3.tile-caption {
   font-size: 24px;
   line-height: 36px;
   color: #fff;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: "Cuprum-Bold", "Arial", sans-serif;
 }
 
@@ -282,7 +278,7 @@ header {
 header.page-header {
   width: 100%;
   background-color: #f1f5f7;
-  padding-bottom: 60px;
+  padding-bottom: 53px;
 }
 
 .header-top {
@@ -332,7 +328,6 @@ header.page-header {
 
 .index-logo, .search-form, .header-top a {
   float: left;
-  /*vertical-align: top;*/
 }
 
 .make-order {
@@ -365,9 +360,12 @@ header.page-header {
   padding-left: 50px;
 }
 
-.search-form::-webkit-input-placeholder, .search-form::-moz-placeholder, .search-form:-moz-placeholder, .search-form:-ms-input-placeholder {
-  color: #fff;
-}
+.search::-webkit-input-placeholder { color: #fff; opacity: 1;}
+.search:-moz-placeholder { color: #fff; opacity: 1; }
+.search::-moz-placeholder {color: #fff; opacity: 1; }
+.search:-ms-input-placeholder {color: #fff; opacity: 1; }
+
+
 
 .search-form input:hover {
   background: #212a3a url("../img/magnif.png") no-repeat -5px -9px;
@@ -455,6 +453,7 @@ a.make-order:active {
 
 .main-nav li {
   display: inline-block;
+  vertical-align: middle;
   font-size: 17px;
 }
 
@@ -612,7 +611,7 @@ span.icon-phone {
   width: 300px;
   margin-right: 20px;
   font-size: 17px;
-  padding: 20px;
+  padding: 16px 0 20px 25px;
   min-height: 123px;
   vertical-align: top;
 }
@@ -669,9 +668,10 @@ span.icon-phone {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
-  line-height: 18px;
-  padding: 10px 23px;
-  max-width: 136px;
+  line-height: 38px;
+    vertical-align: middle;
+  /*padding: 10px 23px;*/
+  max-width: 135px;
   box-sizing: border-box;
   border-radius: 4px;
   text-align: center;
@@ -705,7 +705,7 @@ span.icon-phone {
 }
 
 .main-slide {
-  background: url(../img/perf.jpg) no-repeat;
+  background: #615140 url(../img/perf.jpg) no-repeat;
 }
 
 
@@ -714,7 +714,12 @@ span.icon-phone {
 .index-spliter {
   margin-bottom: 20px;
   background-color: #f7f3ec;
-  padding: 23px;
+  padding: 22px;
+  padding-bottom: 24px;
+}
+
+.popular-goods {
+    margin-bottom: 0;
 }
 
 .index-spliter h2 {
@@ -726,13 +731,17 @@ span.icon-phone {
 
 .index-spliter a {
   float: right;
+  box-sizing: border-box;
   font-size: 14px;
   text-transform: uppercase;
   display: block;
   color: white;
   text-decoration: none;
   background-color: #ee3643;
-  padding: 13px 55px;
+  width: 250px;
+  line-height: 38px;
+  vertical-align: middle;
+  padding: 0;
 }
 
 .index-spliter::after {
@@ -762,7 +771,7 @@ span.icon-phone {
   width: 218px;
   vertical-align: top;
   margin-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   font-size: 17px;
   border: 1px solid #e5e5e5;
 }
@@ -928,7 +937,7 @@ span.icon-phone {
 
 .popular-brands {
   font-size: 0;
-  padding-bottom: 85px;
+  padding-bottom: 65px;
 }
 
 .brand-item {
@@ -1027,6 +1036,7 @@ span.icon-phone {
 }
 
 .servises-slider {
+  width: 620px;
   position: relative;
   left: 320px;
   top: -185px
@@ -1139,7 +1149,7 @@ span.icon-phone {
 .delivery-variant {
   list-style: none;
   padding-left: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .delivery-variant li {
@@ -1160,10 +1170,10 @@ span.icon-phone {
 }
 
 .about-company .red-btn {
-  max-width: 220px;
+  width: 220px;
+  line-height: 38px;
   box-sizing: border-box;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0;
 }
 
 
@@ -1175,14 +1185,20 @@ span.icon-phone {
 }
 
 .contacts img {
-  margin-bottom: 42px;
+  margin-bottom: 37px;
   cursor: pointer;
 }
 
 .about-and-contacts h2 {
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 }
 
+.contacts red-btn {
+    /*width: 100%;*/
+    line-height: 38px;
+    vertical-align: middle;
+        padding: 0;
+}
 
 /*======================================About and contacts interactive style================================================================*/
 
@@ -1224,8 +1240,9 @@ span.icon-phone {
 
 .footer-nav {
   float: right;
-  max-width: 552px;
 }
+
+
 
 .footer-nav ul {
   list-style: none;
@@ -1244,6 +1261,7 @@ span.icon-phone {
 .footer-nav ul li {
   display: inline-block;
   margin-right: 60px;
+  vertical-align: middle;
 }
 
 .footer-nav ul li:last-child {
@@ -1279,6 +1297,7 @@ span.icon-phone {
 .features-nav li {
   display: inline-block;
   margin-right: 59px;
+  vertical-align: middle;
 }
 
 .features-nav a {
@@ -1387,7 +1406,6 @@ span.icon-phone {
   text-decoration: none;
 }
 
-
 /*=================================== map pop up===========================*/
 
 .modal-map {
@@ -1398,7 +1416,7 @@ span.icon-phone {
   box-shadow: 0 0 16px 1px rgba(35, 31, 32, 0.5);
   top: 50%;
   left: 50%;
-  background: url(../img/map_big.jpg) no-repeat;
+  background: #e9e5dc url(../img/map_big.jpg) no-repeat;
   margin-top: -223px;
   margin-left: -470px;
 }
@@ -1611,6 +1629,7 @@ section.catalog {
   text-transform: uppercase;
   list-style: none;
   display: inline-block;
+  vertical-align: top;
 }
 
 .bread-crumbs li a {
@@ -1872,7 +1891,7 @@ a.active-link {
 
 .production-catalog {
   padding-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .catalog-card:nth-child(3n) h3 {
@@ -2051,7 +2070,6 @@ a.active-link {
   cursor: pointer;
 }
 
-
 /*слайдер верх*/
 
 .perforator-slider {
@@ -2075,6 +2093,7 @@ a.active-link {
   height: 6px;
   background-color: white;
   display: inline-block;
+  vertical-align: top;
   margin-right: 10px;
   border: 2px solid white;
   border-radius: 50%;
@@ -2129,7 +2148,7 @@ a.active-link {
 }
 
 .second-slide {
-  background: url("../img/perf 2.jpg") no-repeat;
+  background: #615140 url("../img/perf 2.jpg") no-repeat;
 }
 
 .perforator-slider-slides .slide::before {
@@ -2307,6 +2326,7 @@ span[class^="icon-"] {
 
 .button-block a {
   display: inline-block;
+  vertical-align: middle;
   border-radius: 4px;
   width: 220px;
   text-decoration: none;
