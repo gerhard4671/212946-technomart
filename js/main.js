@@ -8,7 +8,6 @@ window.onload = function() {
   var modalForm = document.querySelector(".wright-us");
   var closeForm = document.querySelector(".modal-form-close");
 
-
   mapOpn.addEventListener("click", function(event) {
     event.preventDefault();
     modalMap.classList.add("modal-map-show");
@@ -29,6 +28,28 @@ window.onload = function() {
     modalForm.classList.remove("wright-us-show");
   });
 
-
-
 };
+
+
+var confirmOpnElems = document.querySelectorAll(".buy-btn");
+var modalConfirm = document.querySelector(".confirm-block");
+var continueBuy = document.querySelector(".continue");
+var closeConfirm = document.querySelector('.confirm-close-btn');
+
+
+for (var i = 0; i < confirmOpnElems.length; i++) {
+  confirmOpnElems[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    modalConfirm.classList.add("confirm-block-show");
+  });
+}
+
+continueBuy.addEventListener("click", function(event) {
+  event.preventDefault();
+  modalConfirm.classList.remove("confirm-block-show");
+});
+
+closeConfirm.addEventListener("click", function(event) {
+  event.preventDefault();
+  modalConfirm.classList.remove("confirm-block-show");
+});
