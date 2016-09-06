@@ -383,7 +383,7 @@ header.page-header {
 
 .header-bookmark, .header-basket {
   line-height: 42px;
-  min-width: 150px;
+  width: 150px;
   box-sizing: border-box;
   padding-left: 17px;
 }
@@ -453,8 +453,9 @@ a.make-order:active {
 
 .main-nav li {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   font-size: 17px;
+  max-width: 181px;
 }
 
 .main-nav a:hover {
@@ -978,7 +979,7 @@ span.icon-phone {
 
 .servises {
   padding-top: 63px;
-  padding-bottom: 102px;
+  /*padding-bottom: 102px;*/
 }
 
 .servises h2 {
@@ -993,9 +994,14 @@ span.icon-phone {
   margin-bottom: 69px;
 }
 
+/*.servises-list {
+    max-height: 280px;
+}*/
 .servises-list-control {
   width: 240px;
+  float: left;
   position: relative;
+
 }
 
 .servises-list-control ul {
@@ -1037,15 +1043,13 @@ span.icon-phone {
 
 .servises-slider {
   width: 620px;
-  position: relative;
-  left: 320px;
-  top: -185px
+  float: right;
+  min-height: 280px;
 }
 
 .slide {
   width: 620px;
-  height: 280px;
-  position: absolute;
+  min-height: 280px;
 }
 
 .slider-header {
@@ -1261,7 +1265,9 @@ span.icon-phone {
 .footer-nav ul li {
   display: inline-block;
   margin-right: 60px;
-  vertical-align: middle;
+  vertical-align: top;
+  max-width: 71px;
+
 }
 
 .footer-nav ul li:last-child {
@@ -1297,7 +1303,8 @@ span.icon-phone {
 .features-nav li {
   display: inline-block;
   margin-right: 59px;
-  vertical-align: middle;
+  vertical-align: top;
+  max-width: 128px;
 }
 
 .features-nav a {
@@ -1726,7 +1733,7 @@ fieldset {
 
 .price-control span {
   font-size: 16px;
-  margin: 0 12px;
+  margin: 0 10px;
 }
 
 .price-control label {
@@ -1978,8 +1985,6 @@ a.active-link {
 
 .brands label, .power-type label {
   display: block;
-  width: 27px;
-  height: 27px;
   position: relative;
   padding-left: 35px;
   margin-bottom: 13px;
@@ -1988,60 +1993,62 @@ a.active-link {
   vertical-align: middle;
 }
 
-.brands label span, .power-type label span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
+.brands label::after, .power-type label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
-.brands label span {
+
+.brands label::after {
   background: url(../img/formelements.png) no-repeat -11px -291px;
 }
 
-.brands label:hover span {
+.brands  label:hover {
   background: url(../img/formelements.png) no-repeat -12px -339px;
 }
 
-.brands input:checked+span {
+.brands input:checked +  label:after {
   background: url(../img/formelements.png) no-repeat -10px -433px;
 }
 
-.brands label:hover input:checked+span {
+.brands input:checked + label:hover {
   background: url(../img/formelements.png) no-repeat -10px -480px;
 }
 
-.brands label input:disabled+span {
+.brands input:disabled label::after {
   background: url(../img/formelements.png) no-repeat -12px -386px;
 }
 
-.brands label input:disabled:checked+span {
+.brands input:disabled:checked label::after {
   background: url(../img/formelements.png) no-repeat -11px -527px;
 }
 
-.power-type label span {
+.power-type label::after {
   background: url(../img/formelements.png) no-repeat -11px -10px;
 }
 
-.power-type label:hover span {
+.power-type label:hover  {
   background: url(../img/formelements.png) no-repeat -11px -57px;
 }
 
-.power-type label input:disabled+span {
+.power-type  input:disabled label::after {
   background: url(../img/formelements.png) no-repeat -11px -105px;
 }
 
-.power-type input:checked+span {
+.power-type input:checked + label::after {
   background: url(../img/formelements.png) no-repeat -11px -151px;
 }
 
-.power-type label:hover input:checked+span {
+.power-type input:checked + label:hover  {
   background: url(../img/formelements.png) no-repeat -11px -198px;
 }
 
-.power-type label input:disabled:checked+span {
+.power-type  input:disabled:checked + label::after {
   background: url(../img/formelements.png) no-repeat -10px -245px;
 }
 
